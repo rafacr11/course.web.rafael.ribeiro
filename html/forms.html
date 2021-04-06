@@ -6,57 +6,79 @@
     <title>Formulário de cadastro</title>
 </head>
 <body>
-    <h1>Cadastre-se</h1>
+    <center><h1>Cadastre-se</h1></center>
     <form>
+        
+        <center>
         <label>Site</label>
-        <input type="text" value="Portal de noticias" readonly><br/>
-
+        <input type="text" value="Portal de noticias" readonly><br/> <br/>
+        
+        </center>
+        <fieldset>
         <label for ="txtNome">Nome Completo</label>
         <input type="text" id=txtNome placeholder="Digite aqui seu nome" maxlength="90s">
         <br/>
+        </fieldset>
 
+        <fieldset>
         <label for="senhaUsuario">Senha: </label>
         <input id="senhaUsuario" type="password" placeholder="Digite aqui sua senha">
         <br/>
-        
+        </fieldset> 
 
+        <fieldset>
         <label for="txtEmail">E-mail</label>
         <input type="email" id="txtEmail" placeholder="Digite aqui seu email">
         <br/>
-
-        <label>Genero:</label>
-        <label>Masculino</label>
-        <input type="radio" id="masculino" value="Masculino" name="genero">
+        </fieldset>   
+        <fieldset>
+        <label>Genero:</label> &nbsp &nbsp &nbsp &nbsp
+        <label>Masculino</label> 
+        <input type="radio" id="masculino" value="Masculino" name="genero"> &nbsp &nbsp &nbsp
         <label>Feminino</label>
-        <input type="radio" id="feminino" value="Feminino" name="genero">
+        <input type="radio" id="feminino" value="Feminino" name="genero"> &nbsp &nbsp &nbsp
         <label>Outro</label>
         <input type="radio" id="outro" value="Outro" name="genero">
         <br/>
+    </fieldset> 
 
+    <fieldset>
         <label>Data de nascimento</label>
         <input type="date" id ="date" min="1910-01-01" max="2015-01-01"> 
         <br>
+    </fieldset> 
 
-
+    <fieldset>
         <label>Endereço</label>
         <label>Rua</label>
         <input type="text" id="txtRua" placeholder="Digite nome da sua rua">
+    </fieldset> 
 
+    <fieldset>
         <label>Cidade</label>
         <input type="text" id="txtCidade" placeholder="Digite sua cidade">
+    </fieldset>
 
+    <fieldset>
         <label>Estado</label>
         <input type="text" id="txtEstado" placeholder="Digite nome do estado">
-    
+    </fieldset>
+
+    <fieldset>
         <label>Cep</label>
         <input type="text" id="txtEstado" placeholder="Digite nome do estado">
         <br/>
+    </fieldset>
+
+    <fieldset>
 
         <label>Deseja receber nossa Newsletter ?</label>
         <input type="checkbox" id="trueNL" name="trueNL">
         <br/>
-        <input type="submit" value="Cadastrar">
-
+    </fieldset>
+       
+        <input type="submit" value="Cadastrar"> <input type="reset" value="Resetar">
+    
 
     </form>
 </body>
