@@ -5,13 +5,15 @@
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="css\style.css"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com"/>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<header>
-		<h1>Portal de Notícias</h1>
+		<h1 class="main titles" >Portal de Noticias</h1>
 
 		<nav>
 			<!-- Lista não ordenada -->
@@ -19,7 +21,7 @@
 				<li> <a href="#secao1"> Noticias</a> </li>
 				<li> <a href="#secao2"> Tabela Futebol </a> </li>
 				<li> <a href="#last_session"> Ultima seção </a> </li>
-				<li><a href="table.html"><b>Top 10 bilheterias</b></a></li>
+				<li><a href="table.html">Top 10 bilheterias</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -38,7 +40,7 @@
 
 	<div>
 		<br /> <br />
-		<a href="forms.html">Cadastre-se</a>
+		<span class="signup"><a href="forms.html">Cadastre-se</a> </span>
 	</div>
 
 
@@ -46,8 +48,9 @@
 		<section>
 			<h1 id="secao1" align="center">Noticias</h1>
 
-			<h2 >‘Avatar’ retorna a cinemas da China, supera ‘Vingadores Ultimato’ e volta a ser maior
+			<h2 class="titles">‘Avatar’ retorna a cinemas da China, supera ‘Vingadores Ultimato’ e volta a ser maior
 				bilheteria da história</h2>
+				<p class="category">FILMES</p>
 			<p>Doze anos depois de sua estreia, o filme ‘Avatar‘, do diretor James Cameron, voltou aos cinemas da China,
 				arrecadando US$ 8,9 milhões (R$49,4 milhões) em seu primeiro final de semana. A informação foi divulgada
 				pelo jornal Deadline. Com isso, o longa superou a vantagem de ‘Vingadores Ultimato‘ de US$ 7,8 milhões
@@ -62,31 +65,35 @@
 			<img
 					src="https://jpimg.com.br/uploads/2019/05/MV5BMTUxMDI1MDI5MV5BMl5BanBnXkFtZTcwOTY3MTUzNA@@._V1_-1024x576.jpg"
 					title="Maluco azul do avatar preparado pra meter flechada"
-					alt="Personagem principal do filme Avatar 2009" width="600px">
-			<a href="table.html"><span class="top-bilhe">Veja aqui o top 10 maiores bilheterias</span></a>
+					alt="Personagem principal do filme Avatar 2009" width="600px"> <br/> <br/>
+			<center> <a href="table.html"><span class="top-bilhe">Veja aqui o top 10 maiores bilheterias</span></a> </center><br><br>
 			<br />
 		</section>
 	</article>
 
+	
 
-	<form>
+<center>
+	<form class="newsletter"> 
+		<br><br>
 		<h2> Assine nossa newsletter! </h2>
-		<label for="txtEmail">Informe seu email:</label>
+		<label for="txtEmail" style="font-size:20px;">Informe seu email:</label>
 		<input type="email" id="txtEmail" size="40" placeholder="Digite aqui seu melhor e-mail">
-		<input type="submit" id="txtEnviar">
-
+		<input type="submit" id="txtEnviar" value="Cadastrar"><br><br> <br><br>
+		
 	</form>
+</center>
 
 
-
-	<hr />
+	
 
 
 
 	<article>
 		<section>
-			<h2>Após Marvel negar presença de Tobey Maguire e Andrew Garfield em novo filme, dublês dos
+			<h2 class="titles">Após Marvel negar presença de Tobey Maguire e Andrew Garfield em novo filme, dublês dos
 				Homens-Aranhas marcam presença em set</h2>
+			<p class="category">FILMES</p>
 			<img src="https://todateen.uol.com.br/wp-content/uploads/2021/03/nicoly29.jpg"
 					title="Tobey Maguire é o melhor"
 					alt="Foto com os 3 Homens-Aranhas (Tobey Maguire, Andrew Garfield e Tom Holland" align="center"
@@ -126,7 +133,7 @@
 		</section>
 
 		<section>
-			<h1 >Video</h1>
+			<h3 >Video</h3>
 			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/mBQI-7NA8K0"
 				title="YouTube video player" frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -173,27 +180,11 @@
 
 	</div>
 
-	<h4>Lorem Ipsum H4 </h4>
 
-	<p><em>Fusce vel egestas eros, a ultrices nibh. </em> <strong> Nam posuere accumsan neque, eu imperdiet justo. Ut
-			hendrerit ex et rutrum imperdiet.</strong> Proin non nibh quis dui sagittis tempus facilisis posuere velit.
-		Aenean vitae condimentum eros, ut feugiat tellus. Cras elit nibh, tempus id rutrum a, ultrices id dui. Aenean
-		pulvinar lectus tortor, a egestas magna efficitur sit amet. Morbi pellentesque sollicitudin interdum. Nulla et
-		tellus nulla. </p>
 
-	<h3>Printar no console em C# </h3>
-	<h6>Lorem ipsum Subtitle H6</h6>
-	<code>Console.WriteLine("Hello World!"); </code>
+	
 
-	<h5>Seção 4 </h5>
-
-	<p><i><sub> Vivamus volutpat orci nec leo facilisis, sit amet dictum lectus dignissim. Praesent vulputate molestie
-				lectus, eu pretium nibh. Duis vitae neque felis. Nunc maximus erat est, at accumsan urna vestibulum sed.
-				Phasellus hendrerit dolor at nunc tristique varius. Maecenas molestie viverra neque, eget aliquet odio
-				luctus vel. Sed egestas accumsan leo, vel cursus tortor elementum at. Sed mi mauris, scelerisque
-				placerat tristique quis, facilisis vel ipsum. Etiam malesuada lorem et tortor commodo sollicitudin.
-				Donec diam nibh, feugiat non lorem eleifend, fringilla laoreet turpis.</sub> </i> </p>
-	<hr />
+	
 
 
 	<footer>
