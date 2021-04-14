@@ -1,23 +1,70 @@
 body{
     background-color:#ededed;
+    margin:0;
+    padding:0;
 }
 
+
+header h1{
+    margin:0;
+    padding:0;
+}
+
+header{    
+    margin-bottom: 0px; 
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 32%, rgba(42,42,42,1) 81%);
+   /* display:flex;
+    flex-direction:row;     
+    justify-content:center;   
+    align-items: center; 
+   */   
+    height:110px;  
+}
+
+.main{
+    
+}
+
+
+nav ul {
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+nav ul li{
+    display:inline-block;
+    margin:15px 15px;    
+    border-bottom:2px solid #FFBF00;
+}
+
+nav ul li a{
+    color:white;
+    font-style: italic;
+     text-decoration: none;
+    font-style: bold;  
+    text-transform: uppercase;    
+    font-weight: 400;  
+}
 
 
 
 h1{
     font-size:40px;  
-    background-color:#181818;  
     color:#FFBF00;
 }
 
 h2{
-    font-size: 30px;    
+    font-size: 30px;   
     
+}
+
+.post-titles{
     font-style: italic;
 }
 
-h2:hover{
+.post-titles:hover{
     color:#FFBF00;
     cursor: pointer;
 }
@@ -26,7 +73,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto', sans-serif;    
 }
 
-.titles{
+.center-titles{
     text-align:center;
 }
 
@@ -90,8 +137,7 @@ ul li a {
 }
 
 ul li a:hover {    
-    color:#d19d00;    
-    text-decoration: underline;
+    color:#d19d00;        
     font-weight: bold;
 }
 
@@ -108,9 +154,31 @@ ul li a:hover {
 
 .newsletter{
     background-color: #2d3436;
-background-image: linear-gradient(to bottom right, #2d3436 10%, #000000 74%);
+    background-image: linear-gradient(to bottom right, #2d3436 10%, #000000 74%);
     border-radius:5px;
     color:white;
     font-weight: 200;
 }
 
+
+
+#destaques{
+    background-image: url('https://sm.ign.com/t/ign_br/screenshot/default/os-filmes-mais-aguardados-de-2021-01_dgwk.1200.jpg');
+    height:600px;
+    width:80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin:auto;    
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+
+    
+}
+
+
+#destaques h2{
+    color:white;
+    text-align: center; 
+    font-size:40px;
+    padding-top:35%   
+}
