@@ -3,85 +3,169 @@
 <head>
     <meta charset="UTF-8">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style.css"/>
+    <link rel="stylesheet" href="css\global.css"/>
+    <link rel="stylesheet" href="css\forms.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 
     <title>Formulário de cadastro</title>
 </head>
+
+
+
+
+
+
 <body>
-    <center><h1>Cadastre-se</h1></center>
-    <form>
-        
-        <center>
-        <label>Site</label>
-        <input type="text" value="Portal de noticias" readonly><br/> <br/>
-        
-        </center>
-        <fieldset>
-        <label for ="txtNome">Nome Completo</label>
+
+    <header>
+		
+        <div class="main center-titles" ><h1>Inmetrics News </h1></div>
+
+        <nav>
+            <!-- Lista não ordenada -->
+            <ul>
+                <li> <a href="#secao1"> Filmes</a> </li>
+                <li> <a href="#secao2"> Séries </a> </li>
+                <li> <a href="#last_session"> Esportes </a> </li>
+                <li><a href="table.html">Top 10 bilheterias</a></li>
+            </ul>
+            
+        </nav>
+    
+
+    
+</header>
+
+
+<div id="content">
+
+
+
+   
+   <section id="sectionform">
+    <form>    
+        <h1>Cadastre-se</h1>      
+        <div class="input-group">
+        <label for ="txtNome">Nome Completo</label>        
         <input type="text" id=txtNome placeholder="Digite aqui seu nome" maxlength="90s">
-        <br/>
-        </fieldset>
+        </div>
+        
+        
 
-        <fieldset>
+    <div class="input-group">
         <label for="senhaUsuario">Senha: </label>
+        
         <input id="senhaUsuario" type="password" placeholder="Digite aqui sua senha">
-        <br/>
-        </fieldset> 
+    </div>
+        
+         
 
-        <fieldset>
+    <div class="input-group">
         <label for="txtEmail">E-mail</label>
+        
         <input type="email" id="txtEmail" placeholder="Digite aqui seu email">
-        <br/>
-        </fieldset>   
-        <fieldset>
-        <label>Genero:</label> &nbsp &nbsp &nbsp &nbsp
-        <label>Masculino</label> 
-        <input type="radio" id="masculino" value="Masculino" name="genero"> &nbsp &nbsp &nbsp
-        <label>Feminino</label>
-        <input type="radio" id="feminino" value="Feminino" name="genero"> &nbsp &nbsp &nbsp
-        <label>Outro</label>
-        <input type="radio" id="outro" value="Outro" name="genero">
-        <br/>
-    </fieldset> 
-
-    <fieldset>
-        <label>Data de nascimento</label>
-        <input type="date" id ="date" min="1910-01-01" max="2015-01-01"> 
-        <br>
-    </fieldset> 
-
-    <fieldset>
-        <label>Endereço</label>
-        <label>Rua</label>
-        <input type="text" id="txtRua" placeholder="Digite nome da sua rua">
-    </fieldset> 
-
-    <fieldset>
-        <label>Cidade</label>
-        <input type="text" id="txtCidade" placeholder="Digite sua cidade">
-    </fieldset>
-
-    <fieldset>
-        <label>Estado</label>
-        <input type="text" id="txtEstado" placeholder="Digite nome do estado">
-    </fieldset>
-
-    <fieldset>
-        <label>Cep</label>
-        <input type="text" id="txtEstado" placeholder="Digite nome do estado">
-        <br/>
-    </fieldset>
-
-    <fieldset>
-
-        <label>Deseja receber nossa Newsletter ?</label>
-        <input type="checkbox" id="trueNL" name="trueNL">
-        <br/>
-    </fieldset>
+        </div>
+        
+        
        
-        <input type="submit" value="Cadastrar"> <input type="reset" value="Resetar">
+        <div class="genero">    
+        <label for="genero">Genero</label>
+        </div>
+
+        <div class="input-group2">        
+        
+          
+        <input type="radio" id="masculino" value="Masculino" name="genero" id="genero"> 
+        <label>Masculino</label>  &nbsp &nbsp &nbsp &nbsp
+
+        
+        
+        <input type="radio" id="feminino" value="Feminino" name="genero" id="genero"> 
+        <label>Feminino</label> &nbsp &nbsp &nbsp &nbsp
+
+
+               
+        <input type="radio" id="outro" value="Outro" name="genero" id="genero">
+        <label>Outro</label>  &nbsp &nbsp &nbsp &nbsp
+        </div>
+       
+     
+
+        <div class="input-group">
+        <label>Data de nascimento</label>        
+        <input type="date" id ="date" min="1910-01-01" max="2015-01-01"> 
+        </div>
+        
+     
+
+        <div class="input-group">
+        <label>Endereço</label>
+        <label>Rua</label>        
+        <input type="text" id="txtRua" placeholder="Digite nome da sua rua">
+    </div>
+
+    <div class="input-group">
+        <label>Cidade</label>        
+        <input type="text" id="txtCidade" placeholder="Digite sua cidade">
+    </div>
+
+    
+    <div class="input-group">
+        <label>Estado</label>        
+        <input type="text" id="txtEstado" placeholder="Digite nome do estado">
+    </div>
+
+    
+    <div class="input-group">
+        <label>Cep</label>        
+        <input type="text" id="txtEstado" placeholder="Digite nome do estado">
+    </div>
+    
+
+    
+    <div class="input-group2">
+        <label>Deseja receber nossa Newsletter ?</label>
+        
+        <input type="checkbox" id="trueNL" name="trueNL">
+    </div>
+        
+    
+    
+        <div class="buttons-group">
+            <button type="reset">
+                <i class="fas fa-window-close"></i> Reset
+            </button>
+
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i> Enviar
+            </button>
+        </div> <br> <br>
     
 
     </form>
+</section>
+
+
+
+    <footer >
+		<h1 id="last_session" class="center-titles">Ultima seção </h1>
+		<p><i><sub> Vivamus volutpat orci nec leo facilisis, sit amet dictum lectus dignissim. Praesent vulputate
+					molestie lectus, eu pretium nibh. Duis vitae neque felis. Nunc maximus erat est, at accumsan urna
+					vestibulum sed. Phasellus hendrerit dolor at nunc tristique varius. Maecenas molestie viverra neque,
+					eget aliquet odio luctus vel. Sed egestas accumsan leo, vel cursus tortor elementum at. Sed mi
+					mauris, scelerisque placerat tristique quis, facilisis vel ipsum. Etiam malesuada lorem et tortor
+					commodo sollicitudin. Donec diam nibh, feugiat non lorem eleifend, fringilla laoreet turpis.</sub>
+			</i> </p>
+	</footer>
+
+
+
+    </div>  
 </body>
 </html>

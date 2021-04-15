@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style.css"/>
+    
+    <link rel="stylesheet" href="css\global.css"/>
+    <link rel="stylesheet" href="css\tabela.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>	
 	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
 
     <title>Top Bilheterias</title>
-    <style>
-    table,tr,td,th{border:1px solid black;}               
-
-    th{font-size:25px;}
-    </style>
+    
 </head>
 <body>
     
+    <header>
+		
+        <div class="main center-titles" ><h1>Inmetrics News </h1></div>
 
-    <table width="100%" font-family: 'Slabo 27px', serif;>
-        <caption><center><h1>Top 10 ! As maiores bilheterias do cinema de todos os tempos</h1></center></caption>
+        <nav>
+            <!-- Lista não ordenada -->
+            <ul>
+                <li> <a href="#secao1"> Filmes</a> </li>
+                <li> <a href="#secao2"> Séries </a> </li>
+                <li> <a href="#last_session"> Esportes </a> </li>
+                <li><a href="table.html">Top 10 bilheterias</a></li>
+            </ul>
+            
+        </nav>
+    
+
+    
+</header>
+    
+    <div id="content">
+
+    <table width="100%" id="top10-table">
+        <caption><h3>Top 10 ! As maiores bilheterias do cinema de todos os tempos</h3></caption>
         
         <thead>
             <tr>
@@ -126,8 +144,8 @@
 
 
 
-    <table WIDTH="100%">
-        <caption><center><h1>Linha do tempo mundial - Maior bilheteria a partir de 1983</h1></center></caption>
+    <table WIDTH="100%" id="top10-table">
+        <caption><h3>Linha do tempo mundial - Maior bilheteria a partir de 1983</h3></caption>
 
         <thead>
             <tr>
@@ -215,6 +233,20 @@
 
     </table>
 
-    
+
+
+
+
+    <footer >
+		<h1 id="last_session" class="center-titles">Ultima seção </h1>
+		<p><i><sub> Vivamus volutpat orci nec leo facilisis, sit amet dictum lectus dignissim. Praesent vulputate
+					molestie lectus, eu pretium nibh. Duis vitae neque felis. Nunc maximus erat est, at accumsan urna
+					vestibulum sed. Phasellus hendrerit dolor at nunc tristique varius. Maecenas molestie viverra neque,
+					eget aliquet odio luctus vel. Sed egestas accumsan leo, vel cursus tortor elementum at. Sed mi
+					mauris, scelerisque placerat tristique quis, facilisis vel ipsum. Etiam malesuada lorem et tortor
+					commodo sollicitudin. Donec diam nibh, feugiat non lorem eleifend, fringilla laoreet turpis.</sub>
+			</i> </p>
+	</footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,45 @@
+
+
+
+#top10-table {
+    font-family: 'Slabo 27px', serif;
+    margin-top:50px;
+    border:none;   
+    border-collapse: separate; 
+    background-color:white;
+    border-spacing: 3px;
+    
+}
+
+h3{
+    font-weight:300;
+    
+}
+
+
+#top10-table caption{    
+   
+    
+}
+
+#top10-table th{
+    padding:14px;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #000 0%, #3b3428 74%);
+    color:white; 
+    font-size:20px;
+}
+
+#top10-table td , #top10-table tfoot{    
+    background-color:white;
+    padding:15px;
+}
+
+#top10-table td:hover{
+    transition:all 0.5s;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #000 0%, #3b3428 74%);
+    color:white;
+}
+
+    

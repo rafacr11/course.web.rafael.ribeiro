@@ -1,0 +1,107 @@
+
+#content{
+    margin:0 15%;  
+}
+
+body {
+    background-color:#ededed;
+    margin:0;
+    padding:0;
+    
+}
+
+
+
+/* CABEÇALHO */
+header h1{
+    margin:0;
+    padding:0;
+}
+
+header{    
+    margin-bottom: 0px; 
+    background-color: #000000;
+    background: linear-gradient(to bottom,#000,#2d2d2d);   /* display:flex;
+    flex-direction:row;     
+    justify-content:center;   
+    align-items: center; 
+   */   
+    height:110px;    
+    width:100%;  
+}
+
+
+
+/* nav */
+
+nav ul {
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+nav ul li{
+    display:inline-block;
+    margin:15px 15px;    
+    border-bottom:2px solid #FFBF00;
+}
+
+nav ul li a{
+    color:white;
+    font-style: italic;
+     text-decoration: none;
+    font-style: bold;  
+    text-transform: uppercase;    
+    font-weight: 400;  
+    font-size:14px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;    
+}
+
+h1{
+    font-size:40px;  
+    color:#FFBF00;
+}
+
+
+h2{
+    font-size: 30px; 
+    
+}
+
+.post-titles:hover{
+    color:#FFBF00;
+    cursor: pointer;
+}
+
+.center-titles{
+    text-align:center;
+}
+
+.post-titles{
+    font-style: italic;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-style: bold;
+    color:black;
+    font-weight:300;
+}
+
+ul li a:hover {    
+    color:#d19d00;        
+    font-weight: bold;
+}
+
+/* aside footer */
+aside , footer{    
+    
+}
