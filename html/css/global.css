@@ -1,4 +1,53 @@
 
+:root{
+    --header-font: 'Roboto', sans-serif;      
+    --p-font:'Lato', sans-serif;
+    --center-text: center;
+    
+    
+}
+
+.post-titles{
+    font-style: italic;
+    font-family: var(--header-font);
+}
+
+.post-titles:hover{
+    color:#FFBF00;
+    cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--header-font);
+}
+
+h1{
+    font-size:40px;  
+    color:#FFBF00;
+}
+
+h2{
+    font-size: 30px;     
+}
+
+p{
+    text-align:left;
+    font-family: var(--p-font);
+    font-size:17px;
+    line-height: 28px;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.center-text{
+    text-align:var(--center-text);
+    
+}
+
+
 #content{
     margin:0 15%;  
 }
@@ -11,28 +60,32 @@ body {
 }
 
 
-
 /* CABEÇALHO */
 header h1{
     margin:0;
     padding:0;
 }
 
-header{    
-    margin-bottom: 0px; 
+header{        
+    margin: auto; 
     background-color: #000000;
-    background: linear-gradient(to bottom,#000,#2d2d2d);   /* display:flex;
+    background: linear-gradient(to bottom,#000,#2d2d2d);   
+    display:flex;
     flex-direction:row;     
-    justify-content:center;   
-    align-items: center; 
-   */   
-    height:110px;    
-    width:100%;  
+    justify-content:space-between;       
+    align-items: center;      
+    height:110px;         
+    padding-left:15%;    
+    padding-right:15%;    
+}
+
+.page-title h1{
+    font-family: 'Days One', sans-serif;
 }
 
 
 
-/* nav */
+/* NAV */
 
 nav ul {
     margin:0;
@@ -49,45 +102,33 @@ nav ul li{
 nav ul li a{
     color:white;
     font-style: italic;
-     text-decoration: none;
+    text-decoration: none;
     font-style: bold;  
     text-transform: uppercase;    
     font-weight: 400;  
-    font-size:14px;
+    font-size:15px;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'Roboto', sans-serif;    
+nav ul li:last-child {
+    border:none;
 }
 
-h1{
-    font-size:40px;  
+nav ul li:nth-last-child(-n + 2) {
+    border:none;
+}
+   
+
+nav ul li:last-child a{
     color:#FFBF00;
+    font-style: normal;
+    font-size:15px;    
 }
 
-
-h2{
-    font-size: 30px; 
-    
-}
-
-.post-titles:hover{
+nav ul li i{    
     color:#FFBF00;
-    cursor: pointer;
+    border:none;
 }
 
-.center-titles{
-    text-align:center;
-}
-
-.post-titles{
-    font-style: italic;
-}
-
-a{
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-}
 
 ul li a {
     text-decoration: none;
@@ -101,7 +142,6 @@ ul li a:hover {
     font-weight: bold;
 }
 
-/* aside footer */
-aside , footer{    
-    
-}
+
+
+
