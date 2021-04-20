@@ -2,220 +2,287 @@
 
 <head>
 	<title>Portal de Notícias</title>
-	<meta charset="utf-8"/>
-	<link rel="stylesheet" href="css\style.css"/>
-	<link rel="stylesheet" href="css\global.css"/>
-	<link rel="preconnect" href="https://fonts.gstatic.com"/>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css\style.css" />
+	<link rel="stylesheet" href="css\global.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<header>
-		
-			<div class="page-title center-text" ><h1>Inmetrics News </h1></div>
 
-			<nav>
-				<!-- Lista não ordenada -->
-				<ul>
-					<li> <a href="#secao1"> Filmes</a> </li>
-					<li> <a href="#secao2"> Séries </a> </li>
-					<li> <a href="#secao3"> Esportes </a> </li>
-					<li><a href="table.html">Top 10 bilheterias</a></li>
-					<li> <i class="fas fa-square fa-xs"></i></li>
-					<li><a href="forms.html">Cadastre-se</a></li>
-				</ul>
-				
-			</nav>
-		
+		<div class="page-title center-text">
+			<h1>Inmetrics News </h1>
+		</div>
 
-		
+		<nav>
+			<!-- Lista não ordenada -->
+			<ul>
+				<li> <a href="#secao1"> Filmes</a> </li>
+				<li> <a href="#secao2"> Séries </a> </li>
+				<li> <a href="#secao3"> Esportes </a> </li>
+				<li><a href="table.html">Top 10 bilheterias</a></li>
+				<li> <i class="fas fa-square fa-xs"></i></li>
+				<li><a href="forms.html">Cadastre-se</a></li>
+			</ul>
+
+		</nav>
+
+
+
 	</header>
 
 
 	<div id="content">
 
-		<div>
-			<div id="destaques"><h2>Os filmes mais esperados para 2021</h2></div>
+		
+		<div id="main-content">
+			<div id="aside">
+				<aside class="aside-space"> 
+					<h4>Ultimas Noticias</h4>
+					<ul>
+						<li><a href="#">‘Avatar’ retorna a cinemas da China</a> </li>
+						<li><a href="#">Veja aqui o top 10 maiores bilheterias</a></li>
+						<li><a href="#">Tobey Maguire e Andrew Garfield em novo filme</a></li>
+					</ul>
+				</aside>
+
+				
+
+
+			<div class="banner-aside aside-space">
+				<div>
+					<div id="destaques">					
+					</div>
+				</div>
+				
+				<h2 >Os filmes mais esperados para 2021</h2>
+			</div>
+
+
+			<div class="banner-aside aside-space">
+				<div> 				
+					<div id="destaques2"></div>
+				</div>
+				<h2 >Alfred Molina comenta retorno de seu Doutor Octopus em Homem-Aranha 3</h2>
+			</div>
+
+
+			
+
+			<form class="newsletter aside-space">				
+				<h2> Assine nossa newsletter! </h2>
+				<label for="txtEmail" style="font-size:20px;">Informe seu email:</label>
+				<input type="email" id="txtEmail" size="20" placeholder="Digite aqui seu melhor e-mail">
+				<input type="submit" id="txtEnviar" value="Cadastrar"><br><br> 
+	
+			</form>
+
+
+
 		</div>
 
 
-	<aside>
-		<h4>Ultimas Noticias</h4>
-		<ul>
-			<li><a href="#">‘Avatar’ retorna a cinemas da China</a> </li>
-			<li><a href="#">Veja aqui o top 10 maiores bilheterias</a></li>
-			<li><a href="#">Tobey Maguire e Andrew Garfield em novo filme</a></li>
-		</ul>
-
-		
-	</aside>
 
 
-	
 
-	
+		<div id="articles-content">
 
+		<article>
+			<section>
 
-	<article>
-		<section>
-			<h1 class="center-text">Noticias</h1>
-
-			<h2 class="post-titles center-text" id="secao1">‘Avatar’ retorna a cinemas da China, supera ‘Vingadores Ultimato’ e volta a ser maior
-				bilheteria da história</h2>
-				<p class="category">FILMES</p>
-			<p>Doze anos depois de sua estreia, o filme ‘Avatar‘, do diretor James Cameron, voltou aos cinemas da China,
-				arrecadando US$ 8,9 milhões (R$49,4 milhões) em seu primeiro final de semana. A informação foi divulgada
-				pelo jornal Deadline. Com isso, o longa superou a vantagem de ‘Vingadores Ultimato‘ de US$ 7,8 milhões
-				(R$43,3 milhões) e retomou o posto de maior bilheteria da história do cinema. No momento, ‘Avatar’ conta
-				com US$ 2.798 bilhões (R$ 15,54 bilhões) enquanto que o longa da Marvel tem US$ 2,797 bilhões (RS$ 15,53
-				bilhões). A expectativa é de que a marca do filme de Cameron continue crescendo nos próximos dias, já
-				que o longa deve ficar em cartaz por algum tempo. No Twitter, a Marvel parabenizou o filme pela
-				conquista: “Parabéns a James Cameron, Jon Landau e à toda a nação Na’vi por recuperar a coroa da
-				bilheteria. Amamos vocês 3 mil”, disse o estúdio, fazendo referência a uma das principais falas de seu
-				longa.</p>
-			<br />
-			<img
-					src="https://jpimg.com.br/uploads/2019/05/MV5BMTUxMDI1MDI5MV5BMl5BanBnXkFtZTcwOTY3MTUzNA@@._V1_-1024x576.jpg"
+				<h2 class="post-titles" id="secao1">‘Avatar’ retorna a cinemas da China, supera ‘Vingadores
+					Ultimato’ e volta a ser maior
+					bilheteria da história</h2>
+					<img src="https://jpimg.com.br/uploads/2019/05/MV5BMTUxMDI1MDI5MV5BMl5BanBnXkFtZTcwOTY3MTUzNA@@._V1_-1024x576.jpg"
 					title="Maluco azul do avatar preparado pra meter flechada"
-					alt="Personagem principal do filme Avatar 2009" width="600px"> <br/> <br/>
-			<center> <a href="table.html"><span class="top-bilhe">Veja aqui o top 10 maiores bilheterias</span></a> </center><br><br>
-			<br />
-		</section>
-	</article>
+					alt="Personagem principal do filme Avatar 2009" width="90%"> <br /> <br />
+				<p class="category">FILMES</p>
+				<p>Doze anos depois de sua estreia, o filme ‘Avatar‘, do diretor James Cameron, voltou aos cinemas da
+					China,
+					arrecadando US$ 8,9 milhões (R$49,4 milhões) em seu primeiro final de semana. A informação foi
+					divulgada
+					pelo jornal Deadline. Com isso, o longa superou a vantagem de ‘Vingadores Ultimato‘ de US$ 7,8
+					milhões
+					(R$43,3 milhões) e retomou o posto de maior bilheteria da história do cinema. No momento, ‘Avatar’
+					conta
+					com US$ 2.798 bilhões (R$ 15,54 bilhões) enquanto que o longa da Marvel tem US$ 2,797 bilhões (RS$
+					15,53
+					bilhões). A expectativa é de que a marca do filme de Cameron continue crescendo nos próximos dias,
+					já
+					que o longa deve ficar em cartaz por algum tempo. No Twitter, a Marvel parabenizou o filme pela
+					conquista: “Parabéns a James Cameron, Jon Landau e à toda a nação Na’vi por recuperar a coroa da
+					bilheteria. Amamos vocês 3 mil”, disse o estúdio, fazendo referência a uma das principais falas de
+					seu
+					longa.</p>
+				<br />				
+				
+				<br />
+			</section>
+		</article>
 
-	
 
 
-	<form class="newsletter"> 
-		<br><br>
-		<h2> Assine nossa newsletter! </h2>
-		<label for="txtEmail" style="font-size:20px;">Informe seu email:</label>
-		<input type="email" id="txtEmail" size="40" placeholder="Digite aqui seu melhor e-mail">
-		<input type="submit" id="txtEnviar" value="Cadastrar"><br><br> <br><br>
+
 		
-	</form>
 
 
 
-	
 
 
 
-	<article>
-		<section>
-			<h2 class="post-titles center-text" id="secao2">Após Marvel negar presença de Tobey Maguire e Andrew Garfield em novo filme, dublês dos
-				Homens-Aranhas marcam presença em set</h2>
-			<p class="category">FILMES</p>
-			<img src="https://todateen.uol.com.br/wp-content/uploads/2021/03/nicoly29.jpg"
+
+		<article>
+			<section>
+				<h2 class="post-titles" id="secao2">Após Marvel negar presença de Tobey Maguire e Andrew
+					Garfield em novo filme, dublês dos
+					Homens-Aranhas marcam presença em set</h2>
+				<p class="category">FILMES</p>
+				<img src="https://todateen.uol.com.br/wp-content/uploads/2021/03/nicoly29.jpg"
 					title="Tobey Maguire é o melhor"
 					alt="Foto com os 3 Homens-Aranhas (Tobey Maguire, Andrew Garfield e Tom Holland" align="center"
-					width="600px">				
-			
-
-			<audio controls>
-				<source src="media/melhor-trilha-sonora.mp3" type="audio/ogg">
-				<source src="media/melhor-trilha-sonora.mp3" type="audio/mp3">
-				Seu navegador não suporta player de audio!
-			</audio>
-			<br />
-			<p style="font-weight: bold;"> Holland disse: “Não, não, eles não aparecerão neste filme. A menos que eles tenham escondido a maior
-				parte das informações de mim, o que eu acho que isso é um grande segredo para eles esconderem de mim.
-				Mas, por enquanto, não. Será uma continuação dos filmes do ‘Homem-Aranha’ que estamos fazendo.” </p>
+					width="600px">
 
 
-			<p><span class="">Depois de muitos rumores de que teríamos Andrew Garfied e Tobey Maguire </span>– atores responsáveis por
-				interpretar o herói teioso em outras versões – no terceiro filme da franquia, “Homem-Aranha: No Way
-				Home”, Tom Holland, atual intérprete do personagem na Marvel, resolveu quebrar o silêncio. Durante uma
-				entrevista para a revista Esquire, ele revelou que as duas figuras queridas pelo público não estarão no
-				longa. Entretanto, algumas publicações recentes nos mostram que isso pode ter sido uma mentira para
-				despistar os fãs.
-
-				Na ocasião, Holland disse: “Não, não, eles não aparecerão neste filme. A menos que eles tenham escondido
-				a maior parte das informações de mim, o que eu acho que isso é um grande segredo para eles esconderem de
-				mim. Mas, por enquanto, não. Será uma continuação dos filmes do ‘Homem-Aranha’ que estamos fazendo.”
-
-				Acontece que a produção do terceiro longa está a todo vapor, visto que sua estreia será em dezembro de
-				2021. Por isso, alguns atores estão fazendo registros no set, incluindo Chris Daniels e William Spencer,
-				dublês de Tobey Maguire e Andrew Garfied, respectivamente, nos filmes do Homem-Aranha.
-
-				George Cottle é coordenador de dublês na Marvel e postou um clique no Instagram agradecendo o elenco do
-				último sábado (27). Chris, dublê no primeiro Homem-Aranha das telinhas, estava presente. Além disso, o
-				dublê de Andrew Garfield também postou estar no estúdio com Tom Holland.</p>
-
-		</section>
-
-		<section>
-			<h3 >Video</h3>
-			<center><iframe width="560" height="315" src="https://www.youtube.com/embed/mBQI-7NA8K0"
-				title="YouTube video player" frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe></center>
-			<p>SURTO! SAIU NOVA FOTO VAZADA de HOMEM ARANHA 3! SPIDER MAN NO WAY HOME com NOVO TRAJE de ESPETACULAR
-					HOMEM ARANHA em SPIDER MAN 3 do TOM HOLLAND! ARANHAVERSO realmente pode acontecer!  </p>
+				<audio controls>
+					<source src="media/melhor-trilha-sonora.mp3" type="audio/ogg">
+					<source src="media/melhor-trilha-sonora.mp3" type="audio/mp3">
+					Seu navegador não suporta player de audio!
+				</audio>
+				<br />
+				<p style="font-weight: bold;"> Holland disse: “Não, não, eles não aparecerão neste filme. A menos que
+					eles tenham escondido a maior
+					parte das informações de mim, o que eu acho que isso é um grande segredo para eles esconderem de
+					mim.
+					Mas, por enquanto, não. Será uma continuação dos filmes do ‘Homem-Aranha’ que estamos fazendo.” </p>
 
 
-			<dl>
-				<dt>Homem Aranha - Atores</dt>
-				<dd><b>Tobey Maguire</b></dd>
-				<dd><i>Andrew Garfield</i></dd>
-				<dd><i>Tom Holland</i></dd>
-			</dl>
+				<p><span class="">Depois de muitos rumores de que teríamos Andrew Garfied e Tobey Maguire </span>–
+					atores responsáveis por
+					interpretar o herói teioso em outras versões – no terceiro filme da franquia, “Homem-Aranha: No Way
+					Home”, Tom Holland, atual intérprete do personagem na Marvel, resolveu quebrar o silêncio. Durante
+					uma
+					entrevista para a revista Esquire, ele revelou que as duas figuras queridas pelo público não estarão
+					no
+					longa. Entretanto, algumas publicações recentes nos mostram que isso pode ter sido uma mentira para
+					despistar os fãs.
 
-			
-		</section>
-	</article>
+					Na ocasião, Holland disse: “Não, não, eles não aparecerão neste filme. A menos que eles tenham
+					escondido
+					a maior parte das informações de mim, o que eu acho que isso é um grande segredo para eles
+					esconderem de
+					mim. Mas, por enquanto, não. Será uma continuação dos filmes do ‘Homem-Aranha’ que estamos fazendo.”
+
+					Acontece que a produção do terceiro longa está a todo vapor, visto que sua estreia será em dezembro
+					de
+					2021. Por isso, alguns atores estão fazendo registros no set, incluindo Chris Daniels e William
+					Spencer,
+					dublês de Tobey Maguire e Andrew Garfied, respectivamente, nos filmes do Homem-Aranha.
+
+					George Cottle é coordenador de dublês na Marvel e postou um clique no Instagram agradecendo o elenco
+					do
+					último sábado (27). Chris, dublê no primeiro Homem-Aranha das telinhas, estava presente. Além disso,
+					o
+					dublê de Andrew Garfield também postou estar no estúdio com Tom Holland.</p>
+
+			</section>
+
+			<section>
+				<h3>Video</h3>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/mBQI-7NA8K0"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe></center>
+				<p>SURTO! SAIU NOVA FOTO VAZADA de HOMEM ARANHA 3! SPIDER MAN NO WAY HOME com NOVO TRAJE de ESPETACULAR
+					HOMEM ARANHA em SPIDER MAN 3 do TOM HOLLAND! ARANHAVERSO realmente pode acontecer! </p>
 
 
-
-	<article>
-		<h2 id="secao3" class="post-titles center-text" >PSG quebra invencibilidade do Bayern com Neymar e Mbappé decisivos	</h2>
-		<p style="text-align:center;">Dupla foi fundamental para surpreender o atual campeão, mesmo jogando sob intensa neve em Munique; na Espanha, Chelsea bateu o Porto </p>
-		<img src="https://veja.abril.com.br/wp-content/uploads/2021/04/GettyImages-1311328900.jpg?quality=70&strip=info&resize=680,453" alt="Neymar e Mbappé comemoram gol">
-		<h4>MORTAL</h4>
-		<p>		
-			O desenho do jogo permitiu a melhor versão de Mbappé, letal quando acionado em contra-ataques. Não foram muitas vezes ao longo dos 90 minutos, é bem verdade, mas o camisa 7 francês não precisa de tanto. Logo aos três minutos, Neymar tabelou com Di María, puxou a marcação e deixou Mbappé livre para chutar. Neuer falhou feio: 1 a 0. Na etapa final, aos 23, foi Di María quem deu a assistência para ele cortar para o meio e bater por baixo, surpreendendo Boateng. O estrago já estava feito.
-		</p>
-		<img src="https://s2.glbimg.com/uly9xvPj9ZwddaXXblgtmOvObug=/0x0:2979x1890/640x360/smart/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/Y/A/nzKh4rTgaPFtBhguMdMg/2021-04-07t190534z-376417752-up1eh471h180v-rtrmadp-3-soccer-champions-bay-psg-report.jpg">
-
-		<h4>NOITE DE GARÇOM</h4>
-		<p>Depois de ser expulso contra o Lille no sábado, Neymar brindou os críticos com uma grande atuação. As duas assistências foram belíssimas, especialmente a segunda, para Marquinhos, aos 28 minutos do primeiro tempo, lançando com a canhota enquanto a defesa do Bayern saía para deixar o zagueiro em impedimento. Suspenso no Francês por dois jogos, poderá descansar para estar em campo no Parque dos Príncipes depois de evitar um amarelo hoje - embora siga pendurado para uma eventual ida da semifinal.</p>
-		<img src="https://s2.glbimg.com/06gEczvsIVtj-dqaLIoFlC0i6jI=/0x42:3447x2145/640x360/smart/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/R/G/t97AbcQli6KctokLMegg/2021-04-07t190710z-546161341-up1eh471h3x0z-rtrmadp-3-soccer-champions-bay-psg-report.jpg">
-		
-		<h4>SEGURANÇA LÁ ATRÁS</h4>
-		<p>Das 31 finalizações do Bayern no jogo, 12 foram no alvo. Navas conseguiu fazer 10 defesas, algumas delas de alto nível de dificuldade, e não teve culpa alguma nos gols sofridos de Choupo-Moting e Thomas Müller, ambos de cabeça, um em cada tempo. O goleiro do PSG precisou comparecer diante da fragilidade de sua defesa, recheada de desfalques.</p>
-		<img src="https://s2.glbimg.com/VVdUq_ABxs4qvy9z1KGSLjKKyWA=/0x0:3425x2284/640x360/smart/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/W/f/APzXJaS1aWN8fS0yhYjA/gettyimages-1311336339.jpg">
+				<dl>
+					<dt>Homem Aranha - Atores</dt>
+					<dd><b>Tobey Maguire</b></dd>
+					<dd><i>Andrew Garfield</i></dd>
+					<dd><i>Tom Holland</i></dd>
+				</dl>
 
 
-		
-
-		
-
-	</article>
+			</section>
+		</article>
 
 
 
-	
+		<article>
+			<h2 id="secao3" class="post-titles">PSG quebra invencibilidade do Bayern com Neymar e Mbappé
+				decisivos </h2>
+			<p style="text-align:center;">Dupla foi fundamental para surpreender o atual campeão, mesmo jogando sob
+				intensa neve em Munique; na Espanha, Chelsea bateu o Porto </p>
+			<img src="https://veja.abril.com.br/wp-content/uploads/2021/04/GettyImages-1311328900.jpg?quality=70&strip=info&resize=680,453"
+				alt="Neymar e Mbappé comemoram gol">
+			<h4>MORTAL</h4>
+			<p>
+				O desenho do jogo permitiu a melhor versão de Mbappé, letal quando acionado em contra-ataques. Não foram
+				muitas vezes ao longo dos 90 minutos, é bem verdade, mas o camisa 7 francês não precisa de tanto. Logo
+				aos três minutos, Neymar tabelou com Di María, puxou a marcação e deixou Mbappé livre para chutar. Neuer
+				falhou feio: 1 a 0. Na etapa final, aos 23, foi Di María quem deu a assistência para ele cortar para o
+				meio e bater por baixo, surpreendendo Boateng. O estrago já estava feito.
+			</p>
+			<img
+				src="https://s2.glbimg.com/uly9xvPj9ZwddaXXblgtmOvObug=/0x0:2979x1890/640x360/smart/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/Y/A/nzKh4rTgaPFtBhguMdMg/2021-04-07t190534z-376417752-up1eh471h180v-rtrmadp-3-soccer-champions-bay-psg-report.jpg">
 
-	
+			<h4>NOITE DE GARÇOM</h4>
+			<p>Depois de ser expulso contra o Lille no sábado, Neymar brindou os críticos com uma grande atuação. As
+				duas assistências foram belíssimas, especialmente a segunda, para Marquinhos, aos 28 minutos do primeiro
+				tempo, lançando com a canhota enquanto a defesa do Bayern saía para deixar o zagueiro em impedimento.
+				Suspenso no Francês por dois jogos, poderá descansar para estar em campo no Parque dos Príncipes depois
+				de evitar um amarelo hoje - embora siga pendurado para uma eventual ida da semifinal.</p>
+			<img
+				src="https://s2.glbimg.com/06gEczvsIVtj-dqaLIoFlC0i6jI=/0x42:3447x2145/640x360/smart/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/R/G/t97AbcQli6KctokLMegg/2021-04-07t190710z-546161341-up1eh471h3x0z-rtrmadp-3-soccer-champions-bay-psg-report.jpg">
+
+			<h4>SEGURANÇA LÁ ATRÁS</h4>
+			<p>Das 31 finalizações do Bayern no jogo, 12 foram no alvo. Navas conseguiu fazer 10 defesas, algumas delas
+				de alto nível de dificuldade, e não teve culpa alguma nos gols sofridos de Choupo-Moting e Thomas
+				Müller, ambos de cabeça, um em cada tempo. O goleiro do PSG precisou comparecer diante da fragilidade de
+				sua defesa, recheada de desfalques.</p>
+			<img
+				src="https://s2.glbimg.com/VVdUq_ABxs4qvy9z1KGSLjKKyWA=/0x0:3425x2284/640x360/smart/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/W/f/APzXJaS1aWN8fS0yhYjA/gettyimages-1311336339.jpg">
 
 
-	<footer >
-		<h1 id="last_session" class="center-text">Ultima seção </h1>
-		<p><i><sub> Vivamus volutpat orci nec leo facilisis, sit amet dictum lectus dignissim. Praesent vulputate
-					molestie lectus, eu pretium nibh. Duis vitae neque felis. Nunc maximus erat est, at accumsan urna
-					vestibulum sed. Phasellus hendrerit dolor at nunc tristique varius. Maecenas molestie viverra neque,
-					eget aliquet odio luctus vel. Sed egestas accumsan leo, vel cursus tortor elementum at. Sed mi
-					mauris, scelerisque placerat tristique quis, facilisis vel ipsum. Etiam malesuada lorem et tortor
-					commodo sollicitudin. Donec diam nibh, feugiat non lorem eleifend, fringilla laoreet turpis.</sub>
-			</i> </p>
-	</footer>
 
-</div>
+
+
+
+		</article>
+
+	</div>
+	</div>
+
+
+
+
+
+		<footer>
+			<h1 id="last_session" class="center-text">Ultima seção </h1>
+			<p><i><sub> Vivamus volutpat orci nec leo facilisis, sit amet dictum lectus dignissim. Praesent vulputate
+						molestie lectus, eu pretium nibh. Duis vitae neque felis. Nunc maximus erat est, at accumsan
+						urna
+						vestibulum sed. Phasellus hendrerit dolor at nunc tristique varius. Maecenas molestie viverra
+						neque,
+						eget aliquet odio luctus vel. Sed egestas accumsan leo, vel cursus tortor elementum at. Sed mi
+						mauris, scelerisque placerat tristique quis, facilisis vel ipsum. Etiam malesuada lorem et
+						tortor
+						commodo sollicitudin. Donec diam nibh, feugiat non lorem eleifend, fringilla laoreet
+						turpis.</sub>
+				</i> </p>
+		</footer>
+
+	</div>
 </body>
 
 </html>
